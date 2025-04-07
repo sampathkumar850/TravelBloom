@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Explore Dream Destinations</title>
+    
+    <!-- Tailwind CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('images/Background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .headline {
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .subtext {
+            font-size: 18px;
+            max-width: 600px;
+            margin-top: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .search-container {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        .search-box {
+            padding: 12px;
+            width: 280px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            outline: none;
+        }
+        .btn {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+        .btn-search {
+            background-color: #facc15;
+            color: #333;
+        }
+        .btn-clear {
+            background-color: #e3342f;
+            color: white;
+        }
+        .btn-search:hover { background-color: #ffcc00; }
+        .btn-clear:hover { background-color: #cc1f1a; }
+        .book-btn {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 14px 28px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s ease-in-out;
+            display: inline-block;
+        }
+        .book-btn:hover {
+            background-color: #facc15;
+            color: #1e3a8a;
+        }
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            transition: color 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            color: #facc15;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- 🌍 Navigation Bar -->
+    <nav class="bg-blue-600 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="TravelBloom Logo" class="h-10 w-10 mr-3">
+                <h1 class="text-white text-3xl font-bold">TravelBloom</h1>
+            </div>
+            
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-white hover:text-yellow-300">Home</a></li>
+                <li><a href="about.html" class="text-white hover:text-yellow-300">About Us</a></li>
+                <li><a href="contact.html" class="text-white hover:text-yellow-300">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 🏔 Hero Section -->
+    <section class="hero-bg">
+        <div class="hero-overlay">
+            <h2 class="headline">Explore <br> Dream <br> Destination</h2>
+            <p class="subtext">It encourages exploration of unfamiliar territories, embraces diverse cultures, and inspires unforgettable journeys.</p>
+
+    <!-- 🔎 Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-box" class="search-box" placeholder="Enter a destination or keyword">
+        <button onclick="searchDestinations()" class="btn btn-search">
+            <i class="fas fa-search"></i> Search
+        </button>
+        <button onclick="clearSearch()" class="btn btn-clear">
+            <i class="fas fa-times"></i> Clear
+        </button>
+    </div>
+
+
+            <!-- 🎟️ Book Now Button -->
+            <a href="#" class="book-btn">Book Now</a>
+
+            <!-- 📱 Social Media Icons -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+<!-- 🌍 Recommendations Section -->
+<div id="recommendations" class="container mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <!-- Search results will be displayed here -->
+</div>

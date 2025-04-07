@@ -1,0 +1,95 @@
+{
+    "destinations": [
+        {
+            "name": "Bora Bora",
+            "type": "Beach",
+            "location": "French Polynesia",
+            "description": "A stunning tropical island with crystal-clear waters and overwater bungalows.",
+            "image": "images/bora-bora.jpg"
+        },
+        {
+            "name": "Maui",
+            "type": "Beach",
+            "location": "Hawaii, USA",
+            "description": "Famous for its breathtaking beaches, scenic landscapes, and volcanic mountains.",
+            "image": "images/Maui.jpg"
+        },
+        {
+            "name": "Santorini",
+            "type": "Beach",
+            "location": "Greece",
+            "description": "A picturesque island with white-washed buildings, blue domes, and magnificent sunsets.",
+            "image": "images/santorini.jpg"
+        },
+        {
+            "name": "Kiyomizu-dera Temple",
+            "type": "Temple",
+            "location": "Kyoto, Japan",
+            "description": "A historic Buddhist temple offering stunning views of Kyoto from its wooden terrace.",
+            "image": "images/kyoto-temple.jpg"
+        },
+        {
+            "name": "Wat Arun",
+            "type": "Temple",
+            "location": "Bangkok, Thailand",
+            "description": "The 'Temple of Dawn' is one of Thailand's most famous landmarks, beautifully lit at night.",
+            "image": "images/watarun.jpg"
+        },
+        {
+            "name": "Taj Mahal",
+            "type": "Historical Site",
+            "location": "Agra, India",
+            "description": "A UNESCO World Heritage Site and one of the New Seven Wonders of the World, built by Emperor Shah Jahan.",
+            "image": "images/tajmahal.jpg"
+        },
+        {
+            "name": "Machu Picchu",
+            "type": "Historical Site",
+            "location": "Peru",
+            "description": "An ancient Incan city set high in the Andes Mountains, offering breathtaking views.",
+            "image": "images/machupicchu.jpg"
+        },
+        {
+            "name": "Paris",
+            "type": "City",
+            "location": "France",
+            "description": "The city of love, known for the Eiffel Tower, museums, and rich cultural experiences.",
+            "image": "images/paris.jpg"
+        },
+        {
+            "name": "New York City",
+            "type": "City",
+            "location": "USA",
+            "description": "A vibrant city featuring Times Square, Broadway, and the Statue of Liberty.",
+            "image": "images/newyork.jpg"
+        },
+        {
+            "name": "Rome",
+            "type": "City",
+            "location": "Italy",
+            "description": "Home to the Colosseum, Vatican City, and an abundance of historical architecture.",
+            "image": "images/rome.jpg"
+        },
+        {
+            "name": "Banff National Park",
+            "type": "Nature",
+            "location": "Canada",
+            "description": "A paradise for nature lovers, offering scenic lakes, mountains, and wildlife encounters.",
+            "image": "images/banff.jpg"
+        },
+        {
+            "name": "Great Barrier Reef",
+            "type": "Nature",
+            "location": "Australia",
+            "description": "The world’s largest coral reef system, perfect for diving and underwater exploration.",
+            "image": "images/reef.jpg"
+        },
+        {
+            "name": "Mount Everest Base Camp",
+            "type": "Adventure",
+            "location": "Nepal",
+            "description": "An adventurous trek to the base of the highest mountain in the world.",
+            "image": "images/everest.jpg"
+        }
+    ]
+}

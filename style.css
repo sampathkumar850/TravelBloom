@@ -1,0 +1,274 @@
+/* 🌍 Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🔵 Body Styling */
+body {
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+/* 🌍 Navigation Bar */
+nav {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #facc15;
+}
+
+/* 🌟 Hero Section */
+.hero-bg {
+    background-image: url('images/Background.jpg'); /* Ensure exact filename */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.headline {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.subtext {
+    font-size: 18px;
+    max-width: 600px;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* 🔎 Search Bar */
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    z-index: 1000; /* Ensures search box is above other elements */
+}
+
+.search-box {
+    background-color: white !important;
+    color: black !important;
+    pointer-events: auto !important;
+    cursor: text !important;
+    padding: 12px;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    z-index: 10; /* Ensures input is clickable */
+}
+
+/* 🖍️ Placeholder Styling */
+.search-box::placeholder {
+    color: #222 !important;
+    font-style: italic;
+    opacity: 1;
+}
+
+/* ✨ Fix for Text Visibility While Selecting */
+.search-box::selection {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+/* 🟡 Search & Clear Buttons */
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-search {
+    background-color: #facc15;
+    color: #333;
+}
+
+.btn-clear {
+    background-color: #e3342f;
+    color: white;
+}
+
+.btn-search:hover { background-color: #ffcc00; }
+.btn-clear:hover { background-color: #cc1f1a; }
+
+/* 🎟️ Book Now Button */
+.book-btn {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.book-btn:hover {
+    background-color: #facc15;
+    color: #1e3a8a;
+}
+
+/* 📱 Social Media Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #facc15;
+}
+
+/* 🎭 Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🌍 Footer */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #facc15;
+}
+
+/* 🌟 Recommendation Section */
+#recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 5%;
+}
+
+.recommendation-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.recommendation-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recommendation-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.recommendation-card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.recommendation-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.visit-btn {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.visit-btn:hover {
+    background-color: #facc15;
+    color: black;
+}
